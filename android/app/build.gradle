@@ -10,7 +10,7 @@ android {
         prefab true
     }
     defaultConfig {
-        applicationId "org.rems.rsdkv5"
+        applicationId "com.traynersw.sonicmania"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 100
@@ -45,7 +45,7 @@ android {
             signingConfig signingConfigs.release
         }
     }
-    namespace 'org.rems.rsdkv5'
+    namespace 'com.traynersw.sonicmania'
     lint {
         abortOnError false
     }
