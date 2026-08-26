@@ -1,4 +1,4 @@
-name: Build RSDKv5 + U
+name: Build Sonic Mania
 
 on:
   workflow_dispatch:
