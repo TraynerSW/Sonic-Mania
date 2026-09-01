@@ -175,7 +175,7 @@ public class Launcher extends AppCompatActivity {
         } else {
             AlertDialog baseAlert = null;
 
-            DialogTimer timer = new DialogTimer(5000, 100);
+            DialogTimer timer = new DialogTimer(1000, 100);
 
             baseAlert = new AlertDialog.Builder(this)
                     .setTitle("Game starting")
