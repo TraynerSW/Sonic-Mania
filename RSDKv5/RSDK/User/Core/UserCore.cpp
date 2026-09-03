@@ -594,8 +594,11 @@ void RSDK::SaveSettingsINI(bool32 writeToFile)
             }
 
             if (strcmp(iniparser_getstring(ini, "Game:devMenu", ";unknown;"), ";unknown;") != 0 || (!RETRO_USE_ORIGINAL_CODE && RETRO_REV0U))
-                WriteText(file, "devMenu=%s\n", (engine.devMenu ? "y" : "n"));
+                //WriteText(file, "devMenu=%s\n", (engine.devMenu ? "y" : "n"));
+                WriteText(file, "devMenu=y\n");
+            
 
+            
 #if !RETRO_USE_ORIGINAL_CODE
             if (strcmp(iniparser_getstring(ini, "Game:gameLogic", ";unknown;"), ";unknown;") != 0)
                 WriteText(file, "gameLogic=%s\n", iniparser_getstring(ini, "Game:gameLogic", "Game"));
